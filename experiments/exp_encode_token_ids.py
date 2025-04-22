@@ -136,9 +136,14 @@ def main():
     tokseq._ticks_beats = ticks_beats
     tokseq.are_ids_encoded = False
 
-    for id in tokseq.ids:
-        print(id)
+    print("\nEncoded crafted tokseq using encode_token_ids(tokseq)\n")
+    tokenizer.encode_token_ids(tokseq)
+    print(tokseq.ids)
 
+    # for id in tokseq.ids:
+    #     print(id)
+
+    print("\n")
 
 if __name__ == "__main__":
     main()
